@@ -25,45 +25,30 @@ body {
 }
 
 
-/* Page width and center alignment */
+/* Center page content */
 header, main, footer {
   width: 840px;
   margin: 0 auto;
 }
 
 
-/* Header */
-header {
-  display: grid;
-  grid-template-columns: 150px 1fr;
-  align-items: center;
-  background-color: var(--primary-color);
-  padding: 20px;
-}
-
-header img {
-  width: 120px;
-}
-
-
-/* Navigation */
-nav {
-  display: flex;
-  justify-content: space-around;
-}
-
-nav a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-
-/* Main headings */
+/* Headings */
 h1, h2 {
   font-family: var(--heading-font);
   color: var(--primary-color);
-  text-align: center;
+}
+
+
+/* Basic spacing */
+nav, p, section, article {
+  margin: 16px;
+  padding: 8px;
+}
+
+
+/* Remove underline from social media image links */
+.socialmedia a {
+  text-decoration: none;
 }
 
 
@@ -72,74 +57,42 @@ h1, h2 {
   position: relative;
 }
 
+
+/* Hero image */
 .hero img {
+  display: block;
   width: 100%;
   height: auto;
 }
 
+
+/* Hero heading overlay */
 .hero h1 {
   position: absolute;
   top: 20px;
   width: 100%;
-  color: white;
-  background-color: rgba(0,0,0,0.5);
-  padding: 10px;
-}
-
-
-/* Company section */
-.company {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  padding: 20px;
-}
-
-.company img {
-  width: 250px;
-}
-
-
-/* History section */
-.history {
-  padding: 20px;
-}
-
-
-/* Adventure section */
-.adventures {
-  padding: 20px;
-}
-
-.trips {
-  display: flex;
-  justify-content: space-between;
-  gap: 15px;
-}
-
-figure {
+  padding: 16px;
   text-align: center;
-}
-
-figure img {
-  width: 150px;
-  height: 100px;
-  object-fit: cover;
+  opacity: 0.7;
+  background-color: var(--accent1-color);
+  color: #fff;
 }
 
 
-/* Footer */
-footer {
-  background-color: var(--primary-color);
-  color: white;
-  padding: 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+/* Hero article overlay */
+.hero article {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 16px;
 }
 
-.social a {
-  color: white;
-  margin-left: 15px;
-  text-decoration: none;
+
+/* Article image */
+.hero article img {
+  float: right;
+  width: 125px;
+  margin-left: 16px;
 }
