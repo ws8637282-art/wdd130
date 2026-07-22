@@ -1,97 +1,20 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us | White Water Rafting</title>
-    <link rel="stylesheet" href="styles/rafting.css">
-</head>
-
-<body>
-
-<header>
-    <img src="images/logo.png" alt="White Water Rafting Logo">
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About Us</a>
-        <a href="trips.html">Trips</a>
-        <a href="contact.html">Contact Us</a>
-    </nav>
-</header>
-
-<main>
-
-    <section class="hero">
-        <img src="images/rafting.jpg" alt="People enjoying a white water rafting adventure">
-        <h1>White Water Rafting</h1>
-    </section>
-
-    <section class="company">
-        <img src="images/customer.jpg" alt="Happy rafting customer">
-
-        <p>
-            Our mission is to provide unforgettable rafting adventures while 
-            ensuring the highest standards of safety, teamwork, and respect for nature. 
-            We believe every trip creates lasting memories for families, friends, 
-            and adventure seekers.
-        </p>
-    </section>
-
-    <section class="history">
-        <h2>History</h2>
-        <p>
-            White Water Rafting was founded with a passion for outdoor adventure 
-            and sharing the beauty of nature. Over the years, we have guided 
-            thousands of guests through exciting rivers while maintaining our 
-            commitment to safety, professionalism, and exceptional customer experiences.
-        </p>
-    </section>
+/* Reset CSS box model */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 
-    <section class="adventures">
-        <h2>Adventure Awaits You!</h2>
-
-        <div class="trips">
-            <figure>
-                <img src="images/dientes.jpg" alt="Los Dientes del Diablo">
-                <figcaption>Los Dientes del Diablo</figcaption>
-            </figure>
-
-            <figure>
-                <img src="images/mallard.jpg" alt="Big Mallard">
-                <figcaption>Big Mallard</figcaption>
-            </figure>
-
-            <figure>
-                <img src="images/halfday.jpg" alt="Half Day Adventure">
-                <figcaption>Half Day Adventure</figcaption>
-            </figure>
-
-            <figure>
-                <img src="images/rapid.jpg" alt="Rapid Rush">
-                <figcaption>Rapid Rush</figcaption>
-            </figure>
-
-            <figure>
-                <img src="images/sunset.jpg" alt="Sunset Float">
-                <figcaption>Sunset Float</figcaption>
-            </figure>
-        </div>
-
-    </section>
-
-</main>
+/* Body styling */
+body {
+  font-family: var(--body-font);
+  color: var(--accent1-color);
+}
 
 
-<footer>
-    <p>© 2026 White Water Rafting | Whitney Carleen Snyder | WDD 130</p>
-
-    <div class="social">
-        <a href="#">Facebook</a>
-        <a href="#">Instagram</a>
-        <a href="#">X</a>
-    </div>
-</footer>
-
-</body>
-</html>
+/* Center page content and set width */
+header, main, footer {
+  width: 840px;
+  margin: 0 auto;
+}
