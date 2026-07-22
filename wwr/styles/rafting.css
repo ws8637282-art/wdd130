@@ -1,98 +1,164 @@
 /* CSS Variables */
 :root {
-  --primary-color: #1b4965;
-  --secondary-color: #62b6cb;
-  --accent1-color: #cae9ff;
-  --accent2-color: #5fa8d3;
+    --primary-color: #0b6e4f;
+    --secondary-color: #f4f4f4;
+    --accent1-color: #1d3557;
+    --accent2-color: #ffffff;
 
-  --heading-font: "Georgia", serif;
-  --body-font: "Arial", sans-serif;
+    --heading-font: Georgia, serif;
+    --body-font: Arial, Helvetica, sans-serif;
 }
 
-
-/* Reset CSS box model */
+/* Reset */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-
-/* Body styling */
+/* Body */
 body {
-  font-family: var(--body-font);
-  color: var(--accent1-color);
+    font-family: var(--body-font);
+    color: var(--accent1-color);
+    background-color: #ffffff;
 }
 
-
-/* Center page content */
-header, main, footer {
-  width: 840px;
-  margin: 0 auto;
+/* Center page */
+header,
+main,
+footer {
+    width: 840px;
+    margin: 0 auto;
 }
 
+/* Header */
+header {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    align-items: center;
+    padding: 16px;
+    background-color: var(--secondary-color);
+}
+
+/* Logo */
+header img {
+    width: 120px;
+    height: auto;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: bold;
+    padding: 8px;
+}
 
 /* Headings */
-h1, h2 {
-  font-family: var(--heading-font);
-  color: var(--primary-color);
+h1,
+h2 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
 }
 
-
-/* Basic spacing */
-nav, p, section, article {
-  margin: 16px;
-  padding: 8px;
+/* Spacing */
+nav,
+p,
+section,
+article {
+    margin: 16px;
+    padding: 8px;
 }
 
-
-/* Remove underline from social media image links */
-.socialmedia a {
-  text-decoration: none;
-}
-
-
-/* Hero section */
+/* Hero */
 .hero {
-  position: relative;
+    position: relative;
 }
 
-
-/* Hero image */
+/* Hero Image */
 .hero img {
-  display: block;
-  width: 100%;
-  height: auto;
+    display: block;
+    width: 100%;
+    height: auto;
 }
 
-
-/* Hero heading overlay */
+/* Hero Heading */
 .hero h1 {
-  position: absolute;
-  top: 20px;
-  width: 100%;
-  padding: 16px;
-  text-align: center;
-  opacity: 0.7;
-  background-color: var(--accent1-color);
-  color: #fff;
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    padding: 16px;
+    text-align: center;
+    background-color: rgba(11, 110, 79, 0.8);
+    color: white;
 }
 
-
-/* Hero article overlay */
+/* Hero Article */
 .hero article {
-  position: absolute;
-  bottom: 20px;
-  left: 20px;
-  right: 20px;
-  background-color: rgba(255, 255, 255, 0.8);
-  padding: 16px;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    background-color: rgba(255, 255, 255, 0.85);
 }
 
-
-/* Article image */
+/* Customer Image */
 .hero article img {
-  float: right;
-  width: 125px;
-  margin-left: 16px;
+    float: right;
+    width: 125px;
+    height: auto;
+    margin-left: 15px;
+}
+
+/* History Section */
+section {
+    margin-top: 20px;
+}
+
+/* Adventure Gallery */
+figure {
+    display: inline-block;
+    text-align: center;
+    margin: 10px;
+}
+
+figure img {
+    width: 150px;
+    height: 100px;
+    object-fit: cover;
+}
+
+figcaption {
+    margin-top: 5px;
+    font-size: 0.9rem;
+}
+
+/* Footer */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    margin-top: 20px;
+    border-top: 1px solid #ccc;
+}
+
+/* Social Media */
+.socialmedia {
+    display: flex;
+    gap: 10px;
+}
+
+.socialmedia a {
+    text-decoration: none;
+}
+
+.socialmedia img {
+    width: 32px;
+    height: 32px;
 }
