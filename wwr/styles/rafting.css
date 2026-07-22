@@ -1,3 +1,15 @@
+/* CSS Variables */
+:root {
+  --primary-color: #1b4965;
+  --secondary-color: #62b6cb;
+  --accent1-color: #cae9ff;
+  --accent2-color: #5fa8d3;
+
+  --heading-font: "Georgia", serif;
+  --body-font: "Arial", sans-serif;
+}
+
+
 /* Reset CSS box model */
 * {
   margin: 0;
@@ -13,8 +25,121 @@ body {
 }
 
 
-/* Center page content and set width */
+/* Page width and center alignment */
 header, main, footer {
   width: 840px;
   margin: 0 auto;
+}
+
+
+/* Header */
+header {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  align-items: center;
+  background-color: var(--primary-color);
+  padding: 20px;
+}
+
+header img {
+  width: 120px;
+}
+
+
+/* Navigation */
+nav {
+  display: flex;
+  justify-content: space-around;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+
+/* Main headings */
+h1, h2 {
+  font-family: var(--heading-font);
+  color: var(--primary-color);
+  text-align: center;
+}
+
+
+/* Hero section */
+.hero {
+  position: relative;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+}
+
+.hero h1 {
+  position: absolute;
+  top: 20px;
+  width: 100%;
+  color: white;
+  background-color: rgba(0,0,0,0.5);
+  padding: 10px;
+}
+
+
+/* Company section */
+.company {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.company img {
+  width: 250px;
+}
+
+
+/* History section */
+.history {
+  padding: 20px;
+}
+
+
+/* Adventure section */
+.adventures {
+  padding: 20px;
+}
+
+.trips {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+figure {
+  text-align: center;
+}
+
+figure img {
+  width: 150px;
+  height: 100px;
+  object-fit: cover;
+}
+
+
+/* Footer */
+footer {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social a {
+  color: white;
+  margin-left: 15px;
+  text-decoration: none;
 }
