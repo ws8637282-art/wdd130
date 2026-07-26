@@ -1,164 +1,182 @@
-/* CSS Variables */
-:root {
-    --primary-color: #0b6e4f;
-    --secondary-color: #f4f4f4;
-    --accent1-color: #1d3557;
-    --accent2-color: #ffffff;
+/* ===========================
+   White Water Rafting Styles
+   =========================== */
 
-    --heading-font: Georgia, serif;
-    --body-font: Arial, Helvetica, sans-serif;
-}
-
-/* Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Body */
 body {
-    font-family: var(--body-font);
-    color: var(--accent1-color);
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+    max-width: 1000px;
+    margin: 0 auto;
     background-color: #ffffff;
 }
 
-/* Center page */
-header,
-main,
-footer {
-    width: 840px;
+main {
+    max-width: 1000px;
     margin: 0 auto;
 }
 
-/* Header */
+section {
+    padding: 40px 20px;
+}
+
+/* ===========================
+   HEADER
+   =========================== */
+
 header {
     display: grid;
     grid-template-columns: 150px 1fr;
     align-items: center;
-    padding: 16px;
-    background-color: var(--secondary-color);
+    padding: 20px;
+    background-color: #d9edf7;
 }
 
-/* Logo */
 header img {
     width: 120px;
-    height: auto;
+    justify-self: center;
 }
 
-/* Navigation */
 nav {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 nav a {
     text-decoration: none;
-    color: var(--primary-color);
+    color: #003049;
     font-weight: bold;
-    padding: 8px;
+    padding: 10px;
 }
 
-/* Headings */
-h1,
-h2 {
-    font-family: var(--heading-font);
-    color: var(--primary-color);
+nav a:hover {
+    color: #0077b6;
 }
 
-/* Spacing */
-nav,
-p,
-section,
-article {
-    margin: 16px;
-    padding: 8px;
-}
+/* ===========================
+   HERO
+   =========================== */
 
-/* Hero */
 .hero {
     position: relative;
 }
 
-/* Hero Image */
 .hero img {
-    display: block;
     width: 100%;
-    height: auto;
+    display: block;
 }
 
-/* Hero Heading */
 .hero h1 {
     position: absolute;
     top: 20px;
     width: 100%;
-    padding: 16px;
     text-align: center;
-    background-color: rgba(11, 110, 79, 0.8);
     color: white;
+    background-color: rgba(0, 0, 0, .6);
+    padding: 15px;
 }
 
-/* Hero Article */
 .hero article {
     position: absolute;
     bottom: 20px;
-    left: 20px;
-    right: 20px;
-    background-color: rgba(255, 255, 255, 0.85);
+    left: 40px;
+    right: 40px;
+    background-color: rgba(255, 255, 255, .85);
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,.3);
 }
 
-/* Customer Image */
 .hero article img {
     float: right;
-    width: 125px;
-    height: auto;
-    margin-left: 15px;
-}
-
-/* History Section */
-section {
-    margin-top: 20px;
-}
-
-/* Adventure Gallery */
-figure {
-    display: inline-block;
-    text-align: center;
-    margin: 10px;
-}
-
-figure img {
     width: 150px;
-    height: 100px;
+    margin-left: 20px;
+}
+
+/* ===========================
+   HISTORY
+   =========================== */
+
+.history h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.history-content {
+    display: grid;
+    grid-template-columns: 1fr 250px 1fr;
+    gap: 20px;
+    align-items: center;
+}
+
+.history-content img {
+    width: 250px;
+    height: 180px;
     object-fit: cover;
 }
 
-figcaption {
-    margin-top: 5px;
-    font-size: 0.9rem;
+/* ===========================
+   ADVENTURES
+   =========================== */
+
+.adventures h2 {
+    text-align: center;
+    margin-bottom: 20px;
 }
 
-/* Footer */
+.adventure-gallery {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.adventure-gallery figure {
+    flex: 1;
+    text-align: center;
+}
+
+.adventure-gallery img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+figcaption {
+    margin-top: 10px;
+    font-size: .9rem;
+    font-weight: bold;
+    color: #003049;
+}
+
+/* ===========================
+   FOOTER
+   =========================== */
+
 footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 16px;
-    margin-top: 20px;
+    padding: 20px;
+    margin-top: 40px;
     border-top: 1px solid #ccc;
 }
 
-/* Social Media */
-.socialmedia {
-    display: flex;
-    gap: 10px;
+footer p {
+    font-size: .9rem;
 }
 
-.socialmedia a {
-    text-decoration: none;
+.socialmedia {
+    display: flex;
+    gap: 15px;
 }
 
 .socialmedia img {
-    width: 32px;
-    height: 32px;
+    width: 35px;
+    height: 35px;
 }
