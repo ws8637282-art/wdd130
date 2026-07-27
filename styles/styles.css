@@ -44,6 +44,8 @@ nav a:hover {
     border-radius: 5px;
 }
 
+/* Main */
+
 main {
     max-width: 800px;
     margin: 30px auto;
@@ -56,23 +58,50 @@ h1 {
     margin-bottom: 20px;
 }
 
+/* Profile image */
+
 main img {
-    width: 200px;
+    width: 150px;
     height: auto;
     border-radius: 10px;
     border: 3px solid var(--primary-color);
     margin-bottom: 20px;
 }
 
+/* Paragraph */
+
 p {
+    padding: 0;
     font-size: 1.1rem;
     margin-top: 10px;
 }
 
-footer {
-    margin-top: 40px;
-    padding: 20px;
+/* Aside */
+
+aside {
+    width: 20rem;
+    margin: 1rem;
+    border: 1px solid rgb(0 0 0 / 0.2);
+    padding: 1rem;
+    background-color: #eee;
+    color: #333;
     text-align: center;
+}
+
+/* Aside image */
+
+aside img {
+    width: 200px;
+    height: auto;
+}
+
+/* Footer */
+
+footer {
+    margin-top: 15px;
+    border-top: 1px solid #000;
+    text-align: center;
+    padding: 20px;
     background-color: var(--primary-color);
     color: white;
 }
