@@ -8,13 +8,13 @@
     box-sizing: border-box;
 }
 
+
 /* CSS Variables */
 
 :root {
     --primary-color: #0077b6;
     --secondary-color: #d9edf7;
     --accent1-color: #003049;
-    --accent2-color: #ffffff;
 
     --heading-font: Georgia, serif;
     --body-font: Arial, Helvetica, sans-serif;
@@ -62,6 +62,7 @@ header {
     background-color: var(--secondary-color);
 }
 
+
 header img {
     width: 120px;
 }
@@ -76,12 +77,14 @@ nav ul {
     list-style: none;
 }
 
+
 nav a {
     text-decoration: none;
     color: var(--accent1-color);
     font-weight: bold;
     padding: 10px;
 }
+
 
 nav a:hover {
     color: var(--primary-color);
@@ -95,6 +98,7 @@ nav a:hover {
 .hero {
     position: relative;
 }
+
 
 .hero > img {
     display: block;
@@ -120,7 +124,7 @@ nav a:hover {
     bottom: 20px;
     left: 40px;
     right: 40px;
-    background-color: rgba(255,255,255,0.85);
+    background-color: rgba(255, 255, 255, 0.85);
     padding: 20px;
 }
 
@@ -224,9 +228,16 @@ footer p {
 }
 
 
+/* Social Media */
+
 .socialmedia {
     display: flex;
     gap: 15px;
+}
+
+
+.socialmedia a {
+    text-decoration: none;
 }
 
 
@@ -299,7 +310,9 @@ footer p {
 }
 
 
-/* EMPLOYEES */
+/* ===========================
+   EMPLOYEES
+   =========================== */
 
 .employees {
     text-align: center;
@@ -323,7 +336,7 @@ footer p {
    RESPONSIVE
    =========================== */
 
-@media screen and (max-width:700px) {
+@media screen and (max-width: 700px) {
 
     header,
     main,
