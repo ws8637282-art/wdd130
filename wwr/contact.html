@@ -17,9 +17,7 @@
         <iframe
             title="White Water Rafting Location Map"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7747.923475807196!2d-171.7915285139148!3d-13.841335296239421!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x71a51473cf1c3023%3A0x720858e24b2d181!2sLotopa%2C%20Apia!5e0!3m2!1sen!2sws!4v1785268321035!5m2!1sen!2sws"
-            width="600"
-            height="450"
-            allowfullscreen=""
+            allowfullscreen
             loading="lazy"
             referrerpolicy="strict-origin-when-cross-origin">
         </iframe>
@@ -30,7 +28,7 @@
 
         <h2>Send Us a Message</h2>
 
-        <form>
+        <form action="#" method="post">
 
             <label for="name">Name:</label>
             <input
@@ -48,32 +46,35 @@
                 placeholder="Your email"
                 required>
 
-            <p>Message Purpose:</p>
+            <fieldset>
+                <legend>Message Purpose</legend>
 
-            <label>
-                <input
-                    type="radio"
-                    name="purpose"
-                    value="general"
-                    required>
-                General Inquiry
-            </label>
+                <label>
+                    <input
+                        type="radio"
+                        name="purpose"
+                        value="general"
+                        required>
+                    General Inquiry
+                </label>
 
-            <label>
-                <input
-                    type="radio"
-                    name="purpose"
-                    value="reservation">
-                Reservation Question
-            </label>
+                <label>
+                    <input
+                        type="radio"
+                        name="purpose"
+                        value="reservation">
+                    Reservation Question
+                </label>
 
-            <label>
-                <input
-                    type="radio"
-                    name="purpose"
-                    value="suggestion">
-                Website Suggestion
-            </label>
+                <label>
+                    <input
+                        type="radio"
+                        name="purpose"
+                        value="suggestion">
+                    Website Suggestion
+                </label>
+
+            </fieldset>
 
             <label for="message">Message:</label>
 
@@ -83,7 +84,7 @@
                 placeholder="Type your message here"
                 required></textarea>
 
-            <label>
+            <label class="checkbox">
                 <input
                     type="checkbox"
                     id="newsletter"
@@ -96,5 +97,26 @@
         </form>
 
     </div>
+
+</section>
+
+<section class="employees">
+
+    <h2>We Are Here to Serve You</h2>
+
+    <figure>
+        <img src="images/manager.jpg" alt="General Manager">
+        <figcaption>John Smith – General Manager</figcaption>
+    </figure>
+
+    <figure>
+        <img src="images/guide.jpg" alt="Senior River Guide">
+        <figcaption>Jane Doe – Senior River Guide</figcaption>
+    </figure>
+
+    <figure>
+        <img src="images/reservations.jpg" alt="Reservations Specialist">
+        <figcaption>David Brown – Reservations Specialist</figcaption>
+    </figure>
 
 </section>
