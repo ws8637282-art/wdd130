@@ -70,11 +70,10 @@ header img {
 
 /* NAVIGATION */
 
-nav ul {
+nav {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    list-style: none;
 }
 
 
@@ -103,7 +102,6 @@ nav a:hover {
 .hero > img {
     display: block;
     width: 100%;
-    height: auto;
 }
 
 
@@ -210,49 +208,18 @@ figcaption {
 
 
 /* ===========================
-   FOOTER
-   =========================== */
-
-footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    margin-top: 40px;
-    border-top: 1px solid #ccc;
-}
-
-
-footer p {
-    font-size: 0.9rem;
-}
-
-
-/* Social Media */
-
-.socialmedia {
-    display: flex;
-    gap: 15px;
-}
-
-
-.socialmedia a {
-    text-decoration: none;
-}
-
-
-.socialmedia img {
-    width: 35px;
-    height: 35px;
-}
-
-
-/* ===========================
    CONTACT PAGE
    =========================== */
 
 .contact-intro {
     text-align: center;
+    margin: 30px 0;
+}
+
+
+.contact-intro address {
+    font-style: normal;
+    line-height: 1.8;
 }
 
 
@@ -260,13 +227,15 @@ footer p {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 30px;
+    align-items: start;
 }
 
 
 .map iframe {
     width: 100%;
-    height: 300px;
+    height: 350px;
     border: none;
+    border-radius: 8px;
 }
 
 
@@ -297,16 +266,18 @@ footer p {
 
 
 .contact-form button {
-    background-color: var(--accent1-color);
+    background-color: var(--primary-color);
     color: white;
     border: none;
     padding: 12px;
+    border-radius: 5px;
     font-weight: bold;
+    cursor: pointer;
 }
 
 
 .contact-form button:hover {
-    background-color: var(--primary-color);
+    background-color: var(--accent1-color);
 }
 
 
@@ -315,13 +286,18 @@ footer p {
    =========================== */
 
 .employees {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
     text-align: center;
+    margin: 40px 0;
 }
 
 
 .employees figure {
-    display: inline-block;
-    margin: 15px;
+    flex: 1;
+    min-width: 200px;
 }
 
 
@@ -329,6 +305,44 @@ footer p {
     width: 200px;
     height: 200px;
     object-fit: cover;
+    border-radius: 8px;
+}
+
+
+.employees figcaption {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+
+/* ===========================
+   FOOTER
+   =========================== */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin-top: 40px;
+    border-top: 1px solid #ccc;
+}
+
+
+footer p {
+    font-size: 0.9rem;
+}
+
+
+.socialmedia {
+    display: flex;
+    gap: 15px;
+}
+
+
+.socialmedia img {
+    width: 35px;
+    height: 35px;
 }
 
 
@@ -345,7 +359,13 @@ footer p {
     }
 
 
-    nav ul {
+    header {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+
+    nav {
         flex-direction: column;
         gap: 10px;
     }
