@@ -20,42 +20,35 @@
     --body-font: Arial, Helvetica, sans-serif;
 }
 
+
+/* BODY */
+
 body {
     font-family: var(--body-font);
     color: var(--accent1-color);
     background-color: #ffffff;
 }
 
-/* Assignment requirement */
+
+/* PAGE WIDTH */
 
 header,
 main,
 footer {
     width: 840px;
+    max-width: 90%;
     margin: 0 auto;
 }
 
-/* General spacing */
 
-nav,
-p,
-section,
-article {
-    margin: 16px;
-    padding: 8px;
-}
-
-section {
-    padding: 40px 20px;
-}
-
-/* Headings */
+/* HEADINGS */
 
 h1,
 h2 {
     font-family: var(--heading-font);
     color: var(--primary-color);
 }
+
 
 /* ===========================
    HEADER
@@ -71,19 +64,15 @@ header {
 
 header img {
     width: 120px;
-    justify-self: center;
 }
 
-/* Navigation */
+
+/* NAVIGATION */
 
 nav ul {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    list-style: none;
-}
-
-nav li {
     list-style: none;
 }
 
@@ -98,6 +87,7 @@ nav a:hover {
     color: var(--primary-color);
 }
 
+
 /* ===========================
    HERO
    =========================== */
@@ -106,48 +96,56 @@ nav a:hover {
     position: relative;
 }
 
-.hero img {
+.hero > img {
     display: block;
     width: 100%;
     height: auto;
 }
 
+
 .hero h1 {
     position: absolute;
     top: 20px;
-    left: 0;
     width: 100%;
     padding: 16px;
     text-align: center;
     background-color: var(--accent1-color);
     color: white;
-    opacity: 0.7;
+    opacity: 0.8;
 }
+
 
 .hero article {
     position: absolute;
     bottom: 20px;
     left: 40px;
     right: 40px;
-    background-color: rgba(255, 255, 255, 0.85);
+    background-color: rgba(255,255,255,0.85);
     padding: 20px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
 }
+
 
 .hero article img {
     float: right;
     width: 125px;
-    margin: 0 0 10px 20px;
+    margin-left: 20px;
 }
+
 
 /* ===========================
    HISTORY
    =========================== */
 
+.history {
+    padding: 40px 20px;
+}
+
+
 .history h2 {
     text-align: center;
     margin-bottom: 20px;
 }
+
 
 .history-content {
     display: grid;
@@ -156,33 +154,41 @@ nav a:hover {
     align-items: center;
 }
 
+
 .history-content img {
     width: 250px;
     height: 180px;
     object-fit: cover;
 }
 
+
 /* ===========================
    ADVENTURES
    =========================== */
+
+.adventures {
+    padding: 40px 20px;
+}
+
 
 .adventures h2 {
     text-align: center;
     margin-bottom: 20px;
 }
 
+
 .adventure-gallery {
     display: flex;
     justify-content: space-between;
     gap: 15px;
-    flex-wrap: wrap;
 }
+
 
 .adventure-gallery figure {
     flex: 1;
     text-align: center;
-    min-width: 140px;
 }
+
 
 .adventure-gallery img {
     width: 100%;
@@ -191,12 +197,13 @@ nav a:hover {
     border-radius: 5px;
 }
 
+
 figcaption {
     margin-top: 10px;
     font-size: 0.9rem;
     font-weight: bold;
-    color: var(--accent1-color);
 }
+
 
 /* ===========================
    FOOTER
@@ -211,23 +218,23 @@ footer {
     border-top: 1px solid #ccc;
 }
 
+
 footer p {
     font-size: 0.9rem;
 }
+
 
 .socialmedia {
     display: flex;
     gap: 15px;
 }
 
-.socialmedia a {
-    text-decoration: none;
-}
 
 .socialmedia img {
     width: 35px;
     height: 35px;
 }
+
 
 /* ===========================
    CONTACT PAGE
@@ -237,16 +244,13 @@ footer p {
     text-align: center;
 }
 
-.contact-intro h1 {
-    margin-bottom: 15px;
-}
 
 .contact-area {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 30px;
-    align-items: start;
 }
+
 
 .map iframe {
     width: 100%;
@@ -254,11 +258,13 @@ footer p {
     border: none;
 }
 
+
 .contact-form {
     background-color: #f2f2f2;
     padding: 20px;
     border-radius: 10px;
 }
+
 
 .contact-form form {
     display: flex;
@@ -266,16 +272,18 @@ footer p {
     gap: 10px;
 }
 
+
 .contact-form input,
 .contact-form textarea {
     padding: 10px;
     font-family: var(--body-font);
-    font-size: 1rem;
 }
+
 
 .contact-form textarea {
     height: 120px;
 }
+
 
 .contact-form button {
     background-color: var(--accent1-color);
@@ -283,36 +291,39 @@ footer p {
     border: none;
     padding: 12px;
     font-weight: bold;
-    cursor: pointer;
 }
+
 
 .contact-form button:hover {
     background-color: var(--primary-color);
 }
 
+
+/* EMPLOYEES */
+
 .employees {
     text-align: center;
 }
 
-.employees h2 {
-    margin-bottom: 20px;
-}
 
 .employees figure {
     display: inline-block;
     margin: 15px;
 }
 
+
 .employees img {
     width: 200px;
     height: 200px;
     object-fit: cover;
-    border-radius: 5px;
 }
 
-/* Responsive */
 
-@media screen and (max-width: 700px) {
+/* ===========================
+   RESPONSIVE
+   =========================== */
+
+@media screen and (max-width:700px) {
 
     header,
     main,
@@ -320,27 +331,28 @@ footer p {
         width: 100%;
     }
 
+
     nav ul {
         flex-direction: column;
         gap: 10px;
     }
+
 
     .history-content,
     .contact-area {
         grid-template-columns: 1fr;
     }
 
+
     .adventure-gallery {
         flex-direction: column;
     }
 
-    .employees figure {
-        display: block;
-    }
 
     footer {
         flex-direction: column;
-        text-align: center;
         gap: 15px;
+        text-align: center;
     }
+
 }
