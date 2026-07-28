@@ -8,7 +8,6 @@
     box-sizing: border-box;
 }
 
-
 /* CSS Variables */
 
 :root {
@@ -20,7 +19,6 @@
     --body-font: Arial, Helvetica, sans-serif;
 }
 
-
 /* BODY */
 
 body {
@@ -28,7 +26,6 @@ body {
     color: var(--accent1-color);
     background-color: #ffffff;
 }
-
 
 /* PAGE WIDTH */
 
@@ -40,7 +37,6 @@ footer {
     margin: 0 auto;
 }
 
-
 /* HEADINGS */
 
 h1,
@@ -48,7 +44,6 @@ h2 {
     font-family: var(--heading-font);
     color: var(--primary-color);
 }
-
 
 /* ===========================
    HEADER
@@ -62,11 +57,9 @@ header {
     background-color: var(--secondary-color);
 }
 
-
 header img {
     width: 120px;
 }
-
 
 /* NAVIGATION */
 
@@ -76,7 +69,6 @@ nav {
     align-items: center;
 }
 
-
 nav a {
     text-decoration: none;
     color: var(--accent1-color);
@@ -84,11 +76,9 @@ nav a {
     padding: 10px;
 }
 
-
 nav a:hover {
     color: var(--primary-color);
 }
-
 
 /* ===========================
    HERO
@@ -98,12 +88,10 @@ nav a:hover {
     position: relative;
 }
 
-
 .hero > img {
     display: block;
     width: 100%;
 }
-
 
 .hero h1 {
     position: absolute;
@@ -116,7 +104,6 @@ nav a:hover {
     opacity: 0.8;
 }
 
-
 .hero article {
     position: absolute;
     bottom: 20px;
@@ -126,13 +113,11 @@ nav a:hover {
     padding: 20px;
 }
 
-
 .hero article img {
     float: right;
     width: 125px;
     margin-left: 20px;
 }
-
 
 /* ===========================
    HISTORY
@@ -142,12 +127,10 @@ nav a:hover {
     padding: 40px 20px;
 }
 
-
 .history h2 {
     text-align: center;
     margin-bottom: 20px;
 }
-
 
 .history-content {
     display: grid;
@@ -156,13 +139,11 @@ nav a:hover {
     align-items: center;
 }
 
-
 .history-content img {
     width: 250px;
     height: 180px;
     object-fit: cover;
 }
-
 
 /* ===========================
    ADVENTURES
@@ -172,12 +153,10 @@ nav a:hover {
     padding: 40px 20px;
 }
 
-
 .adventures h2 {
     text-align: center;
     margin-bottom: 20px;
 }
-
 
 .adventure-gallery {
     display: flex;
@@ -185,12 +164,10 @@ nav a:hover {
     gap: 15px;
 }
 
-
 .adventure-gallery figure {
     flex: 1;
     text-align: center;
 }
-
 
 .adventure-gallery img {
     width: 100%;
@@ -199,13 +176,11 @@ nav a:hover {
     border-radius: 5px;
 }
 
-
 figcaption {
     margin-top: 10px;
     font-size: 0.9rem;
     font-weight: bold;
 }
-
 
 /* ===========================
    CONTACT PAGE
@@ -216,28 +191,25 @@ figcaption {
     margin: 30px 0;
 }
 
-
 .contact-intro address {
     font-style: normal;
     line-height: 1.8;
 }
 
-
 .contact-area {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 30px;
+    gap: 40px;
     align-items: start;
+    margin: 40px 0;
 }
-
 
 .map iframe {
     width: 100%;
     height: 350px;
-    border: none;
+    border: 2px solid #ccc;
     border-radius: 8px;
 }
-
 
 .contact-form {
     background-color: #f2f2f2;
@@ -245,25 +217,54 @@ figcaption {
     border-radius: 10px;
 }
 
-
 .contact-form form {
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
-
 .contact-form input,
 .contact-form textarea {
+    width: 100%;
     padding: 10px;
     font-family: var(--body-font);
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
-
 
 .contact-form textarea {
     height: 120px;
+    resize: vertical;
 }
 
+.contact-form fieldset {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.contact-form legend {
+    font-weight: bold;
+    padding: 0 5px;
+}
+
+.contact-form fieldset label {
+    display: block;
+    margin: 8px 0;
+}
+
+.contact-form input[type="radio"],
+.contact-form input[type="checkbox"] {
+    width: auto;
+    margin-right: 8px;
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 10px 0;
+}
 
 .contact-form button {
     background-color: var(--primary-color);
@@ -273,13 +274,12 @@ figcaption {
     border-radius: 5px;
     font-weight: bold;
     cursor: pointer;
+    transition: background-color 0.3s ease;
 }
-
 
 .contact-form button:hover {
     background-color: var(--accent1-color);
 }
-
 
 /* ===========================
    EMPLOYEES
@@ -294,12 +294,15 @@ figcaption {
     margin: 40px 0;
 }
 
+.employees h2 {
+    width: 100%;
+    margin-bottom: 20px;
+}
 
 .employees figure {
     flex: 1;
     min-width: 200px;
 }
-
 
 .employees img {
     width: 200px;
@@ -308,12 +311,10 @@ figcaption {
     border-radius: 8px;
 }
 
-
 .employees figcaption {
     margin-top: 10px;
     font-weight: bold;
 }
-
 
 /* ===========================
    FOOTER
@@ -328,23 +329,19 @@ footer {
     border-top: 1px solid #ccc;
 }
 
-
 footer p {
     font-size: 0.9rem;
 }
-
 
 .socialmedia {
     display: flex;
     gap: 15px;
 }
 
-
 .socialmedia img {
     width: 35px;
     height: 35px;
 }
-
 
 /* ===========================
    RESPONSIVE
@@ -358,34 +355,33 @@ footer p {
         width: 100%;
     }
 
-
     header {
         grid-template-columns: 1fr;
         text-align: center;
     }
-
 
     nav {
         flex-direction: column;
         gap: 10px;
     }
 
-
     .history-content,
     .contact-area {
         grid-template-columns: 1fr;
     }
 
-
     .adventure-gallery {
         flex-direction: column;
     }
 
+    .employees {
+        flex-direction: column;
+        align-items: center;
+    }
 
     footer {
         flex-direction: column;
         gap: 15px;
         text-align: center;
     }
-
 }
