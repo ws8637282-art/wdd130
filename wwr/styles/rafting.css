@@ -197,7 +197,6 @@ figcaption {
     font-weight: bold;
 }
 
-
 /* ===========================
    CONTACT PAGE
    =========================== */
@@ -297,40 +296,6 @@ figcaption {
 
 
 /* ===========================
-   EMPLOYEES
-   =========================== */
-
-.employees {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    gap: 20px;
-    text-align: center;
-    margin: 40px 0;
-}
-
-.employees h2 {
-    width: 100%;
-    margin-bottom: 20px;
-}
-
-.employees figure {
-    flex: 1;
-    min-width: 200px;
-    text-align: center;
-}
-
-.employees img {
-    display: block;
-    margin: 0 auto;
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 8px;
-}
-
-
-/* ===========================
    FOOTER
    =========================== */
 
@@ -359,6 +324,165 @@ footer p {
 
 
 /* ===========================
+   HOME PAGE
+   =========================== */
+
+.home-hero {
+    position: relative;
+}
+
+.home-hero img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+}
+
+.home-hero h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 48, 73, 0.8);
+    color: white;
+    padding: 20px 40px;
+    text-align: center;
+}
+
+
+.cta {
+    text-align: center;
+    margin: 40px 0;
+    padding: 20px;
+    background-color: var(--secondary-color);
+}
+
+.cta a {
+    display: inline-block;
+    margin-top: 15px;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.cta a:hover {
+    background-color: var(--accent1-color);
+}
+
+
+/* Newsletter */
+
+.newsletter {
+    background-color: #f2f2f2;
+    padding: 30px;
+    margin: 30px 0;
+    text-align: center;
+}
+
+.newsletter form {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.newsletter input {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.newsletter button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+}
+
+
+/* Home Grid */
+
+.home-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin: 40px 0;
+}
+
+.home-card {
+    background-color: var(--secondary-color);
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.home-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+
+/* ===========================
+   TRIPS PAGE
+   =========================== */
+
+.trips-intro {
+    text-align: center;
+    margin: 40px 0;
+}
+
+
+.trip-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin: 40px 0;
+}
+
+
+.trip-card {
+    background-color: var(--secondary-color);
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+
+.trip-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+
+.trip-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 40px 0;
+}
+
+
+.trip-table th,
+.trip-table td {
+    border: 1px solid #ccc;
+    padding: 12px;
+    text-align: center;
+}
+
+
+.trip-table th {
+    background-color: var(--accent1-color);
+    color: white;
+}
+
+
+/* ===========================
    RESPONSIVE
    =========================== */
 
@@ -381,7 +505,9 @@ footer p {
     }
 
     .history-content,
-    .contact-area {
+    .contact-area,
+    .home-grid,
+    .trip-grid {
         grid-template-columns: 1fr;
     }
 
@@ -389,14 +515,10 @@ footer p {
         flex-direction: column;
     }
 
-    .employees {
-        flex-direction: column;
-        align-items: center;
-    }
-
     footer {
         flex-direction: column;
         gap: 15px;
         text-align: center;
     }
+
 }
