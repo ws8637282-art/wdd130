@@ -356,27 +356,19 @@ footer p {
     background-color: var(--secondary-color);
 }
 
-.cta a,
-.newsletter button,
-.contact-form button {
+.cta a {
     display: inline-block;
     margin-top: 15px;
     background-color: var(--primary-color);
     color: white;
     padding: 12px 25px;
     text-decoration: none;
-    border: none;
     border-radius: 5px;
     font-weight: bold;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-.cta a:hover,
-.newsletter button:hover,
-.contact-form button:hover {
+.cta a:hover {
     background-color: var(--accent1-color);
-    transform: translateY(-2px);
 }
 
 
@@ -529,4 +521,4 @@ footer p {
         text-align: center;
     }
 
-}
+} add the requirements needed and send it back
