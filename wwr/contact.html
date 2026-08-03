@@ -5,9 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Contact Us | White Water Rafting</title>
+    <title>Contact Us | White Water Rafting Adventures</title>
 
-    <meta name="description" content="Contact White Water Rafting for reservations, questions, and information about our exciting river adventures.">
+    <meta name="description" content="Contact White Water Rafting Adventures for reservations, questions, and information about our exciting river adventures.">
+
     <meta name="author" content="Whitney Carleen Snyder">
 
     <link rel="stylesheet" href="styles/rafting.css">
@@ -15,213 +16,170 @@
 
 <body>
 
-    <header>
+<header>
 
-        <img src="images/logo.png" alt="White Water Rafting Logo">
+    <img src="images/logo.png" alt="White Water Rafting Adventures Logo">
 
-        <nav aria-label="Main Navigation">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="trips.html">Trips</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
-            </ul>
-        </nav>
+    <nav aria-label="Main Navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="trips.html">Trips</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
 
-    </header>
+</header>
 
+<main>
 
-    <main>
+    <section class="contact-intro">
 
-        <section class="contact-intro">
+        <h1>White Water Rafting Adventures Contact Us</h1>
 
-            <h1>White Water Rafting Contact Us</h1>
+        <address>
+            Lotopa, Apia, Samoa<br>
+            Phone: +685 123 4567<br>
+            Email: info@whitewaterrafting.ws
+        </address>
 
-            <address>
-                Lotopa, Apia, Samoa<br>
-                Phone: +685 123 4567<br>
-                Email: info@whitewaterrafting.ws
-            </address>
+    </section>
 
-        </section>
+    <section class="contact-area">
 
+        <div class="map">
 
-        <section class="contact-area">
+            <iframe
+                title="White Water Rafting Adventures Location Map"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7747.923475807196!2d-171.7915285139148!3d-13.841335296239421!2m3!1f0!2f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x71a51473cf1c3023%3A0x720858e24b2d181!2sLotopa%2C%20Apia!5e0!3m2!1sen!2sws!4v1785268321035!5m2!1sen!2sws"
+                loading="lazy"
+                allowfullscreen
+                referrerpolicy="strict-origin-when-cross-origin">
+            </iframe>
 
-            <div class="map">
+        </div>
 
-                <iframe
-                    title="White Water Rafting Location Map"
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7747.923475807196!2d-171.7915285139148!3d-13.841335296239421!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x71a51473cf1c3023%3A0x720858e24b2d181!2sLotopa%2C%20Apia!5e0!3m2!1sen!2sws!4v1785268321035!5m2!1sen!2sws"
-                    allowfullscreen
-                    loading="lazy"
-                    referrerpolicy="strict-origin-when-cross-origin">
-                </iframe>
+        <div class="contact-form">
 
-            </div>
+            <h2>Send Us a Message</h2>
 
+            <form action="#" method="post">
 
-            <div class="contact-form">
+                <label for="name">Name:</label>
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    required>
 
-                <h2>Send Us a Message</h2>
+                <label for="email">Email:</label>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    required>
 
-                <form action="#" method="post">
+                <fieldset>
 
-                    <label for="name">Name:</label>
+                    <legend>Message Purpose</legend>
 
-                    <input 
-                        type="text"
-                        id="name"
-                        name="name"
-                        required>
-
-
-                    <label for="email">Email:</label>
-
-                    <input
-                        type="email"
-                        id="email"
-                        name="email"
-                        required>
-
-
-                    <fieldset>
-
-                        <legend>Message Purpose</legend>
-
-                        <label>
-                            <input
-                                type="radio"
-                                id="general"
-                                name="purpose"
-                                value="General Inquiry"
-                                required>
-                            General Inquiry
-                        </label>
-
-
-                        <label>
-                            <input
-                                type="radio"
-                                id="reservation"
-                                name="purpose"
-                                value="Reservation Question">
-                            Reservation Question
-                        </label>
-
-
-                        <label>
-                            <input
-                                type="radio"
-                                id="suggestion"
-                                name="purpose"
-                                value="Website Suggestion">
-                            Website Suggestion
-                        </label>
-
-                    </fieldset>
-
-
-                    <label for="message">Message:</label>
-
-                    <textarea
-                        id="message"
-                        name="message"
-                        required></textarea>
-
-
-                    <label class="checkbox">
-
+                    <label for="general">
                         <input
-                            type="checkbox"
-                            id="newsletter"
-                            name="newsletter">
-
-                        Please subscribe me to the monthly newsletter
-
+                            type="radio"
+                            id="general"
+                            name="purpose"
+                            value="General Inquiry"
+                            required>
+                        General Inquiry
                     </label>
 
+                    <label for="reservation">
+                        <input
+                            type="radio"
+                            id="reservation"
+                            name="purpose"
+                            value="Reservation Question">
+                        Reservation Question
+                    </label>
 
-                    <button type="submit">Send Message</button>
+                    <label for="suggestion">
+                        <input
+                            type="radio"
+                            id="suggestion"
+                            name="purpose"
+                            value="Website Suggestion">
+                        Website Suggestion
+                    </label>
 
-                </form>
+                </fieldset>
 
-            </div>
+                <label for="message">Message:</label>
 
-        </section>
+                <textarea
+                    id="message"
+                    name="message"
+                    required></textarea>
 
+                <label class="checkbox" for="newsletter">
+                    <input
+                        type="checkbox"
+                        id="newsletter"
+                        name="newsletter">
+                    Please subscribe me to the monthly newsletter.
+                </label>
 
-        <section class="employees">
+                <button type="submit">Send Message</button>
 
-            <h2>Meet Our Team</h2>
+            </form>
 
+        </div>
 
-            <figure>
+    </section>
 
-                <img src="images/employee1.jpg" alt="General Manager">
+    <section class="employees">
 
-                <figcaption>
-                    John Smith - General Manager
-                </figcaption>
+        <h2>Meet Our Team</h2>
 
-            </figure>
+        <figure>
+            <img src="images/employee1.jpg" alt="John Smith, General Manager">
+            <figcaption>John Smith - General Manager</figcaption>
+        </figure>
 
+        <figure>
+            <img src="images/employee2.jpg" alt="Jane Doe, Senior River Guide">
+            <figcaption>Jane Doe - Senior River Guide</figcaption>
+        </figure>
 
-            <figure>
+        <figure>
+            <img src="images/employee3.jpg" alt="David Brown, Reservations Specialist">
+            <figcaption>David Brown - Reservations Specialist</figcaption>
+        </figure>
 
-                <img src="images/employee2.jpg" alt="Senior River Guide">
+    </section>
 
-                <figcaption>
-                    Jane Doe - Senior River Guide
-                </figcaption>
+</main>
 
-            </figure>
+<footer>
 
+    <p>&copy; 2026 White Water Rafting Adventures | Whitney Carleen Snyder</p>
 
-            <figure>
+    <nav class="socialmedia" aria-label="Social Media Links">
 
-                <img src="images/employee3.jpg" alt="Reservations Specialist">
+        <a href="https://www.facebook.com">
+            <img src="images/facebook.png" alt="Visit our Facebook page">
+        </a>
 
-                <figcaption>
-                    David Brown - Reservations Specialist
-                </figcaption>
+        <a href="https://www.instagram.com">
+            <img src="images/instagram.png" alt="Visit our Instagram page">
+        </a>
 
-            </figure>
+        <a href="https://www.linkedin.com">
+            <img src="images/linkedin.png" alt="Visit our LinkedIn page">
+        </a>
 
-        </section>
+    </nav>
 
-
-    </main>
-
-
-    <footer>
-
-        <p>
-            &copy; 2026 White Water Rafting | Whitney Carleen Snyder
-        </p>
-
-
-        <nav class="socialmedia" aria-label="Social Media Links">
-
-            <a href="https://www.facebook.com">
-                <img src="images/facebook.png" alt="Facebook">
-            </a>
-
-
-            <a href="https://www.instagram.com">
-                <img src="images/instagram.png" alt="Instagram">
-            </a>
-
-
-            <a href="https://www.linkedin.com">
-                <img src="images/linkedin.png" alt="LinkedIn">
-            </a>
-
-        </nav>
-
-    </footer>
-
+</footer>
 
 </body>
-
 </html>
