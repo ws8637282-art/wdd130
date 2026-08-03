@@ -58,8 +58,8 @@ header {
     display: grid;
     grid-template-columns: 150px 1fr;
     align-items: center;
-    padding: 20px;
-    background-color: var(--secondary-color);
+    background-color: #d8ecf7;
+    padding: 20px 40px;
 }
 
 header img {
@@ -292,6 +292,46 @@ figcaption {
 .contact-form button:hover {
     background-color: var(--accent1-color);
 }
+
+
+/* ===========================
+   EMPLOYEE SECTION
+   =========================== */
+
+.employees {
+    border: 2px solid #ccc;
+    padding: 30px;
+    margin: 40px 0;
+}
+
+.employees h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.employee-gallery {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.employee-gallery figure {
+    text-align: center;
+    width: 220px;
+}
+
+.employee-gallery img {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.employee-gallery figcaption {
+    margin-top: 10px;
+    font-weight: bold;
+} 
 
 
 /* ===========================
